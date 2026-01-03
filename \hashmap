@@ -1,0 +1,28 @@
+import java.util.*;
+public class HashmapDemo {
+  public static void main(String args[]) {
+	  HashMap<Integer, String> map1 = new HashMap<>();
+      HashMap<Integer, String> map2 = new HashMap<>(10);
+      HashMap<Integer, String> map3 = new HashMap<>(10, 0.75f);
+      HashMap<Integer, String> map4 = new HashMap<>(map1);
+
+      // Methods
+      map1.put(1, "Java");         // 1
+      map1.put(2, "Python");       // 2
+      map1.putIfAbsent(3, "C");    // 3
+      map1.get(1);                 // 4
+      map1.remove(2);              // 5
+      map1.containsKey(1);         // 6
+      map1.containsValue("C");     // 7
+      map1.size();                 // 8
+      map1.isEmpty();              // 9
+      map1.keySet();               // 10
+      map1.values();               // 11
+      map1.entrySet();             // 12
+      map1.replace(1, "Java SE");  // 13
+      map1.clone();                // 14
+      map1.clear();                // 15
+
+      System.out.println("HashMap Demo Completed"); 
+  }
+}
