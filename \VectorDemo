@@ -1,0 +1,27 @@
+import java.util.*;
+public class VectorDemo {
+  public static void main (String args[]) {
+	Vector<String> v1 = new Vector<>();
+	Vector<String> v2 = new Vector<>(5);
+	Vector<String> v3 = new Vector<>(5,2);
+	Vector<String> v4= new Vector<>(Arrays.asList("A", "B", "C"));
+	v1.add("java");
+	v1.addElement("python");
+	v1.addAll(v4);
+	v1.remove("B");
+	v1.removeElement("A");
+	v1.get(0);
+	v1.set(0,  "C++");
+	v1.size();
+	v1.capacity();
+	v1.contains("c");
+	 //v1.firstElement();
+	System.out.println(v1.firstElement());
+	v1.lastElement();
+	System.out.println(v1);
+	v1.isEmpty();
+	v1.clone();
+	v1.clear();
+	
+  }
+}
